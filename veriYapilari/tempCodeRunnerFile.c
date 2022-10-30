@@ -1,0 +1,1 @@
+(rehber *)malloc(sizeof(rehber))

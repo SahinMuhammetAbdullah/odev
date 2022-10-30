@@ -13,21 +13,23 @@ struct dugum
 };
 typedef struct dugum rehber;
 
+rehber *bas = NULL;
 rehber *ac = NULL;
 rehber *kisiEkle(char [40], char [40], char [10], char [40]);
 rehber *kisi1 = NULL;
 
 void listele(rehber *);
+void olustur();
 void ismeGoreAra(rehber *, char [40]);
 void soyismeGoreAra(rehber *, char [40]);
 void sil();
 
+
 int main()
 {
-    int secim;
+    int cikis, secim;
     printf("______Telefon Rehberi______ ");
-    while (secim != 5)
-    {
+    do{
         printf("\n \n 1 - Rehberi Goruntule \n 2 - Kisileri Isinlerine Gore Ara \n 3 - Kisileri Soyisimlerine gore ara \n 4 - Kisileri Sil \n 5 - Programi Kapat\n Secim : ");
         scanf("%d", &secim);
 
@@ -35,16 +37,7 @@ int main()
         {
             case 1:
                 /* Rehberi ekranda gorunteleyecek blok */
-                kisi1 = kisiEkle(strcpy(kisi1->isim,"Muhammet Abdullah"), strcpy(kisi1->soyisim,"Sahin"), strcpy(kisi1->telefon,"5351040690"), strcpy(kisi1->mail,"apo690apo@gmail.com"));
-                rehber *kisi2 = kisiEkle(strcpy(kisi2->isim,"Salih"), strcpy(kisi2->soyisim,"Sahin"), strcpy(kisi2->telefon,"5352637898"), strcpy(kisi2->mail,"salihsahin@gmail.com"));
-                rehber *kisi3 = kisiEkle(strcpy(kisi3->isim,"Ahmet"), strcpy(kisi3->soyisim,"Kilic"), strcpy(kisi3->telefon,"5436678790"), strcpy(kisi3->mail,"ahmetkilic@gmail.com"));
-                rehber *kisi4 = kisiEkle(strcpy(kisi4->isim,"Muhammet"), strcpy(kisi4->soyisim,"Tamur"), strcpy(kisi4->telefon,"5321447690"), strcpy(kisi4->mail,"m.tamur@gmail.com"));
-
-                kisi1 -> sonra = kisi2;
-                kisi2 -> sonra = kisi3;
-                kisi3 -> sonra = kisi4;
-                kisi4 -> sonra = kisi1;
-
+                olustur();
                 listele(kisi1);
                 break;
             case 2:
@@ -80,7 +73,10 @@ int main()
                 printf("Lutfen Gecerli Bir Islem Girin!");
                 break;
         }
-    }
+        
+    printf("Uygulamadan Cikmak Istemisin. DIKKAT ET REHBERIN SILINE BILIR :)? 1 CIKMA / 0 CIK:");
+    scanf("%d",&cikis);
+    }while(cikis!=0);
     return 0;
 }
 
@@ -98,18 +94,33 @@ rehber *kisiEkle(char isim[40], char soyisim[40], char telefon[10], char mail[40
     return kisi;
 }
 
-void listele(rehber *dayanak)
+void olustur()
 {
-    rehber* gecici = dayanak;
+    kisi1 = kisiEkle("abdullah", "sahin","5351040690","apo690apo@gmail.com");
+    rehber *kisi2 = kisiEkle("salih","Sah","5352637898","salihsahin@gmail.com");
+    rehber *kisi3 = kisiEkle("ahmet","kilic", "5436678790","ahmetkilic@gmail.com");
+    rehber *kisi4 = kisiEkle("muhammet","tamur","5321447690","m tamur@gmail.com");
+    kisi1 -> sonra = kisi2;
+    kisi2 -> sonra = kisi3;
+    kisi3 -> sonra = kisi4;
 
-    while (dayanak != NULL)
+}
+
+void listele(rehber *bas)
+{
+    rehber *gecici;
+    gecici = bas;
+
+    while (gecici != NULL)
     {
-        printf("\n ad: %s\n soyad: %s\n telefon numarasi: %s\n mail adresi %s\n",gecici -> isim, gecici -> soyisim, gecici -> telefon, gecici -> mail);
+        printf(" |Isim: %s| ", gecici->isim);
+        printf(" |soyisim: %s| ", gecici->soyisim);
+        printf(" |numara: %d| ", gecici->telefon);
+        printf(" |eposta: %s| \n", gecici->mail);
+        printf ("__________________________________________________________________________________________________________\n");
 
         gecici = gecici -> sonra;
     }
-
-    printf("\n ad: %s\n soyad: %s\n telefon numarasi: %s\n mail adresi %s\n",gecici -> isim, gecici -> soyisim, gecici -> telefon, gecici -> mail);
 }
 
 void ismeGoreAra(rehber *baslangic, char aranan[40])
