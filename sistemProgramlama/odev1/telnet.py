@@ -66,7 +66,7 @@ def send_email(username, to, subject, message):
 
   client_socket.close()
 
-  print('QUIT gönderildi')
+  print('Sistem Tamamlaniyor')
 
 
 if __name__ == '__main__':
