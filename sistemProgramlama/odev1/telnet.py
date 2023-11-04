@@ -27,12 +27,12 @@ def send_email(username, to, subject, message):
   print('AUTH LOGIN bağlandı')
   print(recv_data.decode())
 
-  client_socket.send(b'YXBvNjkwYXBvQGdtYWlsLmNvbQ==\r\n')
+  client_socket.send(b'gonderenAdresBase64Kod==\r\n')
   recv_data = client_socket.recv(1024)
   print('E-posta adresi base64 olarak gönderildi')
   print(recv_data.decode())
 
-  client_socket.send(b'c3d2eSBmYW92IHV3ZHQgdmFrYQ==\r\n')
+  client_socket.send(b'gonderenAdresSifreBase64Kod\r\n')
   recv_data = client_socket.recv(1024)
   print('Şifre base64 olarak gönderildi')
   print(recv_data.decode())
@@ -63,16 +63,16 @@ def send_email(username, to, subject, message):
   recv_data = client_socket.recv(1024)
   print('QUIT gönderildi')
   print(recv_data.decode())
-  
+
   client_socket.close()
-  
+
   print('QUIT gönderildi')
 
 
 if __name__ == '__main__':
   # Gmail hesap bilgileri
-  gmail_username = 'apo690apo@gmail.com'
-  to_email = 'm.sahinabdullah@gmail.com'
+  gmail_username = 'gonderenAdres@gmail.com'
+  to_email = 'liciAdres@gmail.com'
   email_subject = 'Odev Ciktisi'
   email_message = 'Odev basari ile tamamlanmistir.'
 
