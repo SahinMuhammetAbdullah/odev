@@ -72,7 +72,7 @@ def send_email(username, to, subject, message):
 if __name__ == '__main__':
   # Gmail hesap bilgileri
   gmail_username = 'gonderenAdres@gmail.com'
-  to_email = 'liciAdres@gmail.com'
+  to_email = 'aliciAdres@gmail.com'
   email_subject = 'Odev Ciktisi'
   email_message = 'Odev basari ile tamamlanmistir.'
 
