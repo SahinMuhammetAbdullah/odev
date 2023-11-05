@@ -10,7 +10,7 @@ class Person {
   void display() {
     print("First Name: $firstName");
     print("Last Name: $lastName");
-    print("Gender: $gender");
+    print("Gender: ${gender.toString().split('.').last}");
   }
 }
 
