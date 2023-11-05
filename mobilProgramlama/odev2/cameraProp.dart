@@ -26,6 +26,14 @@ class CameraProp {
   }
 }
 
+void printCameraProperties(CameraProp camera) {
+  print("Camera ID: ${camera.Id}");
+  print("Brand: ${camera.Brand}");
+  print("Color: ${camera.Color}");
+  print("Prize: ${camera.Prize}");
+  print("------------------------");
+}
+
 void main(List<String> args) {
   CameraProp cam1 = CameraProp();
   cam1.id = 1;
@@ -48,11 +56,6 @@ void main(List<String> args) {
   List<CameraProp> camList = [cam1, cam2, cam3];
 
   for (var camera in camList) {
-    print("\nCamera Details:");
-    print("ID: ${camera.id}");
-    print("Brand: ${camera.brand}");
-    print("Color: ${camera.color}");
-    print("Prize: ${camera.prize}");
-    print("----------------------");
+    printCameraProperties(camera);
   }
 }

@@ -16,7 +16,7 @@ class HouseProp {
 void main(List<String> args) {
   HouseProp house1 = HouseProp(1, "mustakil", 150000);
   HouseProp house2 = HouseProp(2, "apartman", 750000);
-  HouseProp house3 = HouseProp(3, "cilla", 100000);
+  HouseProp house3 = HouseProp(3, "villa", 100000);
 
   List<HouseProp> houses = [];
 
