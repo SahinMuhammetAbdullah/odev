@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-// Uncomment lines 3 and 6 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 void main() {
-  // debugPaintSizeEnabled = true;
   runApp(const MyApp());
 }
 
@@ -17,11 +14,9 @@ class MyApp extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            /*1*/
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                /*2*/
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
@@ -40,7 +35,6 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          /*3*/
           Icon(
             Icons.star,
             color: Colors.red[500],
