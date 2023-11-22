@@ -1,18 +1,24 @@
 name: build_ui_login_page
-description: A new Flutter project
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0" 
+  sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_lints: ^2.0.0
 flutter:
   assets:
     - images/flutter-logo.png
