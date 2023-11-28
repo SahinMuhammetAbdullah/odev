@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginDemo(),
     );
@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
 }
 
 class LoginDemo extends StatefulWidget {
+  const LoginDemo({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _LoginDemoState createState() => _LoginDemoState();
 }
 
@@ -25,7 +28,7 @@ class _LoginDemoState extends State<LoginDemo> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Login Page",
           style: TextStyle(color: Colors.white),
         ),
@@ -44,7 +47,7 @@ class _LoginDemoState extends State<LoginDemo> {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
@@ -54,9 +57,9 @@ class _LoginDemoState extends State<LoginDemo> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 15.0, right: 15.0, top: 15, bottom: 0),
+            const Padding(
+              padding:
+                  EdgeInsets.only(left: 15.0, right: 15.0, top: 15, bottom: 0),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -68,7 +71,7 @@ class _LoginDemoState extends State<LoginDemo> {
             ),
             TextButton(
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 'Forgot Password',
                 style: TextStyle(color: Colors.blue, fontSize: 15),
               ),
@@ -85,16 +88,16 @@ class _LoginDemoState extends State<LoginDemo> {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => HomePage()));
                 },
-                child: Text(
+                child: const Text(
                   'Login',
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 280,
             ),
-            Text('New User? Create Account'),
+            const Text('New User? Create Account'),
           ],
         ),
       ),
@@ -103,17 +106,20 @@ class _LoginDemoState extends State<LoginDemo> {
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Home Page',
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.blue,
-        iconTheme: IconThemeData(color: Colors.white), // Set icon color here
+        iconTheme:
+            const IconThemeData(color: Colors.white), // Set icon color here
       ),
       body: Center(
         child: Container(
@@ -127,7 +133,7 @@ class HomePage extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            child: Text(
+            child: const Text(
               'Welcome',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
