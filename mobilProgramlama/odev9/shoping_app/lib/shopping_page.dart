@@ -3,19 +3,14 @@ import 'package:shoping_app/cart_page.dart';
 import 'package:shoping_app/login_page.dart';
 
 class ShoppingPage extends StatefulWidget {
-  final String username;
-  const ShoppingPage({Key? key, required this.username}) : super(key: key);
-
   @override
-  _ShoppingPageState createState() => _ShoppingPageState(username: username);
+  _ShoppingPageState createState() => _ShoppingPageState();
 }
 
 class _ShoppingPageState extends State<ShoppingPage> {
   // ignore: unused_element
-  _ShoppingPageState({Key? key, required this.username});
+  _ShoppingPageState({Key? key});
   List<String> selectedItems = [];
-
-  final String username;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +25,7 @@ class _ShoppingPageState extends State<ShoppingPage> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(
-            'Mağazamıza Hoşgeldin $username',
+            'Mağazamıza Hoşgeldin',
             style: const TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.red,
@@ -104,7 +99,7 @@ class _ShoppingPageState extends State<ShoppingPage> {
             ListTile(
               title: const Text('Çıkış Yap'),
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const LoginPage(),

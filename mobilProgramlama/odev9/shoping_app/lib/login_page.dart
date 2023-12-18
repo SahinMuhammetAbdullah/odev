@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoping_app/shopping_page.dart';
+import 'package:shoping_app/welcome_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   void _showSnackBar(String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Hoşgeldin $message'),
+        content: Text('Hoşgeldin'),
         duration: const Duration(seconds: 2),
       ),
     );
@@ -28,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: SizedBox(),
         title: const Text(
           "Giriş Sayfası",
           style: TextStyle(color: Colors.white),
@@ -99,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => ShoppingPage(
+                          builder: (_) => WelcomePage(
                             username: _emailController.text,
                           ),
                         ),
