@@ -9,5 +9,6 @@ FROM
 GROUP BY
     [Araç Tablosu].aracno;
 /*- ilişkisel cebir ifadesi
-π aracno,COUNT(mkod) ​ (σ mkod is not null ​ (Kira) ⋈ aracno ​ Arac)
+π aracno,COUNT(mkod) ​ (σ mkod is not null ​ (Kiralama Tablosu) ⋈ aracno ​ Araç Tablosu)
+π aracno,COUNT(mkod)(σ Araç Tablosu.aracno = Kiralama Tablosu.aracno(Arac Tablosu⋈Kiralama Tablosu))
 -*/
