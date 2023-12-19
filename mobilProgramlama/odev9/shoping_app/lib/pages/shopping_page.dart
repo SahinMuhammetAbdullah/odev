@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoping_app/cart_page.dart';
-import 'package:shoping_app/login_page.dart';
+import 'package:shoping_app/pages/cart_page.dart';
+import 'package:shoping_app/pages/login_page.dart';
 
 class ShoppingPage extends StatefulWidget {
   @override
@@ -8,7 +8,6 @@ class ShoppingPage extends StatefulWidget {
 }
 
 class _ShoppingPageState extends State<ShoppingPage> {
-  // ignore: unused_element
   _ShoppingPageState({Key? key});
   List<String> selectedItems = [];
 

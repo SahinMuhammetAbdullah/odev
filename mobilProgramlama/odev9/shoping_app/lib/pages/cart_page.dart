@@ -15,7 +15,6 @@ class _CartPageState extends State<CartPage> {
   @override
   void initState() {
     super.initState();
-    // Başlangıçta her ürün için 1 adet eklenmiş varsayalım.
     itemCounts = List<int>.generate(widget.selectedItems.length, (index) => 1);
   }
 
@@ -30,7 +29,6 @@ class _CartPageState extends State<CartPage> {
         itemBuilder: (context, index) {
           return ListTile(
             leading: Image.asset(widget.selectedItems[index]),
-            // title parametresini kaldırdık veya boş bir metin bıraktık
             title: Text(''),
             subtitle: Text('Adet: ${itemCounts[index]}'),
             trailing: Row(
@@ -39,7 +37,6 @@ class _CartPageState extends State<CartPage> {
                 IconButton(
                   icon: Icon(Icons.remove),
                   onPressed: () {
-                    // Sepetten bir ürünü çıkarma işlemi
                     if (itemCounts[index] > 0) {
                       setState(() {
                         itemCounts[index]--;
@@ -50,7 +47,6 @@ class _CartPageState extends State<CartPage> {
                 IconButton(
                   icon: Icon(Icons.add),
                   onPressed: () {
-                    // Sepetteki bir ürünün sayısını arttırma işlemi
                     setState(() {
                       itemCounts[index]++;
                     });
@@ -59,7 +55,6 @@ class _CartPageState extends State<CartPage> {
                 IconButton(
                   icon: Icon(Icons.delete),
                   onPressed: () {
-                    // Sepetten bir ürünü kaldırma işlemi
                     setState(() {
                       widget.selectedItems.removeAt(index);
                       itemCounts.removeAt(index);

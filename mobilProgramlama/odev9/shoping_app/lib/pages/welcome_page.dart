@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoping_app/shopping_page.dart'; // Mağaza sayfasının dosya adını ve yolunu ayarlayın.
+import 'package:shoping_app/pages/shopping_page.dart'; 
 
 class WelcomePage extends StatelessWidget {
   final String username;
@@ -20,12 +20,11 @@ class WelcomePage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Mağaza sayfasına git butonu
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          ShoppingPage()), // Mağaza sayfasının örneğini oluşturun
+                          ShoppingPage()),
                 );
               },
               child: Text('Mağaza Sayfasına Git'),

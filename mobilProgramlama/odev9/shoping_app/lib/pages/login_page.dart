@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shoping_app/welcome_page.dart';
+import 'package:shoping_app/pages/welcome_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _LoginPageState createState() => _LoginPageState();
 }
 
