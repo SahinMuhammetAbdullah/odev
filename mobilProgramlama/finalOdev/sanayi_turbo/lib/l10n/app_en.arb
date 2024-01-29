@@ -1,0 +1,15 @@
+{
+    "homepage": "Home Page",
+    "search": "Search",
+    "favorites": "Favorites",
+    "cart": "Cart",
+    "login": "Person",
+    "customerLogin": "Customer",
+    "addProduct": "Add Product",
+    "car": "Automotive Industry",
+    "food": "Food Industry",
+    "glass": "Glass Industry",
+    "machine": "Machinery Industry",
+    "chemical": "Health Industry",
+    "cement": "Cement Industry"
+}

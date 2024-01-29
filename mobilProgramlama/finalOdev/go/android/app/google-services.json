@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144676132384",
+    "project_id": "goprog-c76ba",
+    "storage_bucket": "goprog-c76ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144676132384:android:6a1b6dd248a6f7f20c0e45",
+        "android_client_info": {
+          "package_name": "com.exemple"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQH1uBivsnfUYMzkYvuacz4h3CncTXgh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

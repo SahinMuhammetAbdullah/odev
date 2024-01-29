@@ -94,7 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
-                      // Giriş mantığını burada gerçekleştirin
                       _showSnackBar(_emailController.text);
                       Navigator.push(
                         context,

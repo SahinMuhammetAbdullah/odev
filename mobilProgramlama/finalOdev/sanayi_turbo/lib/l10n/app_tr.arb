@@ -1,0 +1,16 @@
+{
+    "homepage": "Anasayfa",
+    "search": "Ara",
+    "favorites": "Favoriler",
+    "cart": "Sepet",
+    "login": "Profil",
+    "customerLogin": "Müşteri",
+    "addProduct": "Ürün Ekle",
+    "car": "Araba Sanayisi",
+    "food": "Yemek Snayisi",
+    "glass": "Cam Sanayisi",
+    "machine": "Makine Sanayisi",
+    "chemical": "Sağlık Sanayisi",
+    "cement": "Çimoento Sanayisi"
+
+}

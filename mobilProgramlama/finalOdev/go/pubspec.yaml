@@ -1,0 +1,35 @@
+name: go
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: 
+  firebase_storage: 
+  cloud_firestore: 
+  image_picker: 
+  firebase_auth: 
+  firebase_messaging: 
+
+
+  
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+
+flutter:
+
+  
+  uses-material-design: true
