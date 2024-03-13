@@ -1,0 +1,143 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+}
+
+html,
+body {
+    background: linear-gradient(315deg, #787A91 0%, #d7e1ec 74%);
+}
+
+#contents p {
+    text-indent: 1em;
+    text-align: left;
+    font-size: xx-large;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    height: auto;
+    max-width: 100%;
+    width: 200px;
+}
+
+.col-12 #name p {
+    margin-top: 35px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#social {
+    font-size: x-large;
+    display: block;
+    max-width: 100%;
+    margin: 15px;
+    text-decoration: none;
+}
+
+#social:hover {
+    transform: scale(1.04);
+}
+
+.GitHub {
+    color: #2b3137;
+}
+
+.GitHub:hover {
+    color: #2b3137;
+}
+
+.LinkedIn {
+    color: #0077b5;
+}
+
+.LinkedIn:hover {
+    color: #0077b5;
+}
+
+
+.Twitter {
+    color: #141d26;
+}
+
+.Twitter:hover {
+    color: #141d26;
+}
+
+.Medium {
+    color: #000000;
+}
+
+.Medium:hover {
+    color: #000000;
+}
+
+.YouTube {
+    color: #c3352e;
+}
+
+.YouTube:hover {
+    color: #c3352e;
+}
+
+.check {
+    color: #22a126;
+}
+
+.check:hover {
+    color: #22a126;
+}
+
+.navbar {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a:link {
+    color: #000000;
+}
+
+.navbar a:visited {
+    color: #000000;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.navbar a:active {
+    color: #000000;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.col-9 {
+    width: 9000px;
+}
+
+#giris {
+    font-size: 119px;
+    text-align: center;
+}
+
+footer {
+    position: static;
+    text-align: center;
+    padding: 1rem;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#cont .container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-height: 1500;
+    padding: 10px;
+}
