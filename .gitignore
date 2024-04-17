@@ -1,0 +1,15 @@
+# Java .jar dosyalarını ignore et
+*.jar
+
+# Servers klasörünü ignore et
+Servers/
+
+# VSCode ayar dosyalarını ignore et
+.vscode/
+
+# Eclipse IDE'nin metadata klasörünü ignore et
+.metadata/
+
+# Apache Tomcat klasörlerini ignore et
+apache-tomcat-10.0.27/
+apache-tomcat-10.1.19/

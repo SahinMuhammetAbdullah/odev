@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-21">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
@@ -8,7 +8,7 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/mabdu/Dokumente/code/odev/web/odev4/jakarta.servlet-api-6.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mabdu/Dokumente/code/odev/web/odev4/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mabdu/Dokumente/code/odev/web/odev6/jakarta.servlet-api-6.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mabdu/Dokumente/code/odev/web/odev6/jsp-api-2.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
