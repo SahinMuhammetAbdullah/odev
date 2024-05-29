@@ -1,0 +1,13 @@
+com\bam\beans\Product.class
+com\bam\beans\TaxIdentificationNumber.class
+com\bam\beans\Invoice.class
+com\bam\beans\Brand.class
+com\bam\beans\Order.class
+com\bam\dao\DBHelper.class
+com\bam\beans\DesiPrize.class
+com\bam\beans\Category.class
+com\bam\beans\Address.class
+com\bam\beans\Cargo.class
+com\bam\beans\Merchant.class
+com\bam\beans\Properties.class
+com\bam\beans\Customer.class
