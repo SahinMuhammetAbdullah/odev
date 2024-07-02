@@ -13,3 +13,4 @@ Servers/
 # Apache Tomcat klasörlerini ignore et
 apache-tomcat-10.0.27/
 apache-tomcat-10.1.19/
+node_modules/
